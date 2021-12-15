@@ -37,7 +37,7 @@ public class ClientController {
                 .name(name)
                 .email(email)
                 .build();
-        return EntityModel.of(clientService.createNewUser(clientToCreate),
+        return EntityModel.of(clientService.createNewClient(clientToCreate),
                 linkTo(methodOn(ClientController.class).getClient(invoiceId)).withRel("client"));
     }
 }

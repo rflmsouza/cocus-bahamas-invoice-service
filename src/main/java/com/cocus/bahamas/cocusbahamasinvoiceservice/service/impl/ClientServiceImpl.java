@@ -41,7 +41,7 @@ public class ClientServiceImpl implements ClientService {
     }
 
     @Override
-    public ClientDTO createNewUser(ClientDTO clientDTO) {
+    public ClientDTO createNewClient(ClientDTO clientDTO) {
 
         ClientDTO savedClient = ClientDTO.toDTO(clientRepository.save(Client.toClient(clientDTO)));
         this.callExternalService(savedClient);

@@ -6,5 +6,5 @@ import java.util.List;
 public interface ClientService {
 
     List<ClientDTO> getClientsByInvoiceID(Long invoiceId);
-    ClientDTO createNewUser(ClientDTO clientDTO);
+    ClientDTO createNewClient(ClientDTO clientDTO);
 }
