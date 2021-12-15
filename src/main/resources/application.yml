@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 10000
+      maximum-pool-size: 5
+    url: jdbc:postgresql://db:5432/bahamas
+    username: postgres
+    password: pwdForTheTest
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true

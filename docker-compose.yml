@@ -1,0 +1,20 @@
+version: '2'
+
+services:
+  app:
+    image: 'cocus-bahamas-invoice-service:latest'
+    build:
+      context: .
+    container_name: app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  db:
+    image: 'postgres:latest'
+    container_name: db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=pwdForTheTest
+      - POSTGRES_DB=bahamas

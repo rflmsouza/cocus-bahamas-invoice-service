@@ -1,0 +1,2 @@
+INSERT INTO clients (name, email, fiscal_id, invoice_id) VALUES ('testClient', 'testClient@example.com', 9999, 1234);
+INSERT INTO clients (name, email, fiscal_id, invoice_id) VALUES ('testClient2', 'testClient2@example.com', 9999, 1234);
